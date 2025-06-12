@@ -47,15 +47,15 @@ const Input = () => {
         <h3 className="user-info-heading">User Info:</h3>
         {userInfo ? (
           <>
+            <img src={userInfo.avatar_url} alt="Avatar" className="avatar" />
             <p id="username">Username: {userInfo.username}</p>
             <p id="bio">Bio: {userInfo.bio}</p>
             <p id="location">Location: {userInfo.location}</p>
             <p id="followers">Followers: {userInfo.followers}</p>
             <p id="following">Following: {userInfo.following}</p>
-            <img id="avatar" src={userInfo.avatar_url} alt="Avatar" />
           </>
         ) : (
-          <p>No user info to display.</p>
+          <p>No user name entered !!</p>
         )}
       </div>
     </div>
