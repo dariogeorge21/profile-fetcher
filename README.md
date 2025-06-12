@@ -26,4 +26,4 @@ npm start
 
 
 
-> Made with ❤️ by [Your Name](https://github.com/dariogeorge21)
+> Made with ❤️ by [Dario](https://github.com/dariogeorge21)
