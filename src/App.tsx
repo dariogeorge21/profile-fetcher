@@ -1,4 +1,5 @@
 import './App.css'
+import Footer from './components/footer'
 import Heading from './components/heading'
 import Input from './components/input'
 
@@ -10,6 +11,7 @@ function App() {
         <Heading />
       </div>
       <Input />
+      <Footer />
     </>
   )
 }
