@@ -6,6 +6,7 @@ const Input = () => {
     username: string;
     bio: string;
     location: string;
+    repos: number;
     followers: number;
     following: number;
     avatar_url: string;
@@ -19,6 +20,7 @@ const Input = () => {
         username: data.login,
         bio: data.bio || 'No bio available',
         location: data.location || 'No location available',
+        repos: data.public_repos,
         followers: data.followers,
         following: data.following,
         avatar_url: data.avatar_url,
@@ -50,6 +52,7 @@ const Input = () => {
             <img src={userInfo.avatar_url} alt="Avatar" className="avatar" />
             <p id="username">Username: {userInfo.username}</p>
             <p id="bio">Bio: {userInfo.bio}</p>
+            <p id="repos">Public Repos: {userInfo.repos}</p>
             <p id="location">Location: {userInfo.location}</p>
             <p id="followers">Followers: {userInfo.followers}</p>
             <p id="following">Following: {userInfo.following}</p>

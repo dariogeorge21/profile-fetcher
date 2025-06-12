@@ -11,7 +11,9 @@ function App() {
         <Heading />
       </div>
       <Input />
+      <div>
       <Footer />
+      </div>
     </>
   )
 }
